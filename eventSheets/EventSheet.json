@@ -31,103 +31,6 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "group",
-					"disabled": false,
-					"title": "Back line",
-					"description": "",
-					"isActiveOnStart": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-created",
-									"objectClass": "Trail",
-									"sid": 507073734914377
-								}
-							],
-							"actions": [
-								{
-									"id": "set-position-to-another-object",
-									"objectClass": "Trail",
-									"sid": 313856773323045,
-									"parameters": {
-										"object": "Ball",
-										"image-point-optional": "0"
-									}
-								},
-								{
-									"id": "add-child",
-									"objectClass": "Ball",
-									"sid": 428853763033712,
-									"parameters": {
-										"child": "Trail",
-										"transform-x": true,
-										"transform-y": true,
-										"transform-w": false,
-										"transform-h": false,
-										"transform-a": false,
-										"transform-o": false,
-										"transform-z-elevation": false,
-										"transform-visibility": false,
-										"destroy-with-parent": true
-									}
-								}
-							],
-							"sid": 507494509736298
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-velocity",
-									"objectClass": "Ball",
-									"sid": 644973062508947,
-									"behaviorType": "Physics",
-									"parameters": {
-										"which": "overall-velocity",
-										"comparison": 4,
-										"value": "32"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-rate",
-									"objectClass": "Trail",
-									"sid": 385684987831707,
-									"parameters": {
-										"rate": "32"
-									}
-								}
-							],
-							"sid": 662955630238331
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 415761654245859
-								}
-							],
-							"actions": [
-								{
-									"id": "set-rate",
-									"objectClass": "Trail",
-									"sid": 653033971965452,
-									"parameters": {
-										"rate": "0"
-									}
-								}
-							],
-							"sid": 222967393185888
-						}
-					],
-					"sid": 221798378418222
-				},
-				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -339,25 +242,106 @@
 						}
 					],
 					"sid": 851422580442801
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Back line",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "Trail",
+									"sid": 200368832763215
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "Trail",
+									"sid": 415857388007340,
+									"parameters": {
+										"object": "Ball",
+										"image-point-optional": "0"
+									}
+								},
+								{
+									"id": "add-child",
+									"objectClass": "Ball",
+									"sid": 942132675123245,
+									"parameters": {
+										"child": "Trail",
+										"transform-x": true,
+										"transform-y": true,
+										"transform-w": false,
+										"transform-h": false,
+										"transform-a": false,
+										"transform-o": false,
+										"transform-z-elevation": false,
+										"transform-visibility": false,
+										"destroy-with-parent": true
+									}
+								}
+							],
+							"sid": 325387248393268
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-velocity",
+									"objectClass": "Ball",
+									"sid": 513928190206868,
+									"behaviorType": "Physics",
+									"parameters": {
+										"which": "overall-velocity",
+										"comparison": 4,
+										"value": "32"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-rate",
+									"objectClass": "Trail",
+									"sid": 361923612963414,
+									"parameters": {
+										"rate": "32"
+									}
+								}
+							],
+							"sid": 816477325239538
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 152643654585722
+								}
+							],
+							"actions": [
+								{
+									"id": "set-rate",
+									"objectClass": "Trail",
+									"sid": 638742553468124,
+									"parameters": {
+										"rate": "0"
+									}
+								}
+							],
+							"sid": 796421291056607
+						}
+					],
+					"sid": 967536498080595
 				}
 			],
 			"sid": 701421708020806
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "SlowMotion",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [],
-					"sid": 935998206189823
-				}
-			],
-			"sid": 594068316962518
 		},
 		{
 			"eventType": "group",
